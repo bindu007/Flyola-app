@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Plus, Plane, Calendar, Clock, MapPin, Search, Edit, Trash2, Upload } from 'lucide-react'
 import { useAuth } from '../context/AuthContext'
 import * as XLSX from 'xlsx'
+import { read, write } from 'xlsx';
 
 function Flights() {
   const { user } = useAuth()
